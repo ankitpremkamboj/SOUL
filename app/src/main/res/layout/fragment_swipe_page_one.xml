@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_swipe_view_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tutorial_bg"
+    tools:context="com.soul.app.fragment.SwipePageOneFragment">
+
+    <!--android:layout_marginBottom="@dimen/dp132"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/tutorials_logo_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp42"
+             />
+
+        <TextView
+            android:id="@+id/find_best_match_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tutorials_logo_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp12"
+            android:gravity="center"
+            android:text="@string/first_find_the_best"
+            android:textSize="@dimen/text_size_19sp" />
+
+        <ImageView
+            android:id="@+id/tutorial_1_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/find_best_match_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp12"
+            android:background="@drawable/tutorial_1"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+
+</FrameLayout>

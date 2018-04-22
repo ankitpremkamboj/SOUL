@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content"
+    android:id="@+id/row_matches_ll"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/dp32"
+    android:paddingRight="@dimen/dp16"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.soul.app.customui.CircleImageView
+        android:id="@+id/matches_pic_ci"
+        android:layout_width="@dimen/dp60"
+        android:layout_height="@dimen/dp60"
+        android:background="@drawable/small_pic_placeholder" />
+
+    <TextView
+        android:id="@+id/matches_name"
+        style="@style/avenirLTStdMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/matches_pic_ci"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_gravity="center"
+        android:text="Gauhar"
+        android:textSize="@dimen/text_size_14sp" />
+</LinearLayout>

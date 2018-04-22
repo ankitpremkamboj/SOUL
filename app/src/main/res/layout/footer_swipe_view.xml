@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp122"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:layout_weight="2"
+    android:background="@color/colorWhite"
+    android:elevation="@dimen/dp32"
+    android:orientation="vertical">
+
+    <com.soul.app.customui.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp12"
+        app:centered="true"
+        app:fillColor="@color/colorPrimary"
+        app:pageColor="@color/black_d5d5d5"
+        app:snap="false" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/by_clicking_sign_up_1_tv"
+                style="@style/avenirLTStdBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="@string/by_clicking_sign_up"
+                android:textSize="@dimen/text_size_10sp" />
+
+            <TextView
+                android:id="@+id/privacy_policy_2_tv"
+                style="@style/avenirLTStdBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/by_clicking_sign_up_1_tv"
+                android:text="@string/privacy_policy"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_10sp" />
+
+            <TextView
+                android:id="@+id/and_3_tv"
+                style="@style/avenirLTStdBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/privacy_policy_2_tv"
+                android:text="@string/and"
+                android:textSize="@dimen/text_size_10sp" />
+
+            <TextView
+                android:id="@+id/term_and_use_4_tv"
+                style="@style/avenirLTStdBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/and_3_tv"
+                android:text="@string/terms_and_use"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_10sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp6">
+
+            <ImageView
+                android:id="@+id/fb_login_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/by_clicking_sign_up_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:elevation="@dimen/dp2"
+                android:src="@drawable/fb_login" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fb_login_btn"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp6"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fb_login_btn"
+                android:layout_gravity="center"
+                android:text="@string/we_do_not_post"
+                android:textSize="@dimen/text_size_11sp" />
+
+            <ImageView
+                android:id="@+id/info_icon_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp6"
+                android:background="@drawable/info_icon" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

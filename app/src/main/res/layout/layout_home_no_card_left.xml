@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/home_no_card_left_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/home_no_card_left_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/no_cards_left_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp80"
+                android:background="@drawable/no_cards_left" />
+
+            <TextView
+                style="@style/avenirLTStdBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp62"
+                android:gravity="center"
+                android:text="@string/look_like_there_no_new"
+                android:textColor="@color/colorDarkText"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                style="@style/avenirLTStdBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp36"
+                android:gravity="center"
+                android:text="@string/try_changing_your_preference"
+                android:textColor="@color/colorLightGreyText"
+                android:textSize="@dimen/text_size_13sp" />
+
+            <TextView
+                style="@style/avenirLTStdMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp36"
+                android:gravity="center"
+                android:text="@string/check_back_soon"
+                android:textColor="@color/colorLightGreyText"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                style="@style/avenirLTStdBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp61"
+                android:gravity="center"
+                android:text="@string/or_invite_some"
+                android:textColor="@color/colorLightGreyText"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp19"
+                android:background="@drawable/fb_login" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

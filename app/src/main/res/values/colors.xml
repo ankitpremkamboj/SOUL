@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff4b52</color>
+    <color name="colorPrimaryDark">@color/color_status_bar</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_ff4a51">#ff4a51</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorDarkText">#383838</color>
+    <color name="colorGreyText">#6a6a6a</color>
+    <color name="colorLightGreyText">#b1b1b1</color>
+    <color name="colorHomeInboxText">#b1b1b1</color>
+    <color name="colorDarkDividerLine">#d4d4d4</color>
+    <color name="colorLightDividerLine">#f5f5f5</color>
+    <color name="colorStrip">#f6f6f6</color>
+    <color name="colorFacebookButton">#3b5998</color>
+    <color name="color_instagram">#165488</color>
+    <color name="colorDark">#383838</color>
+    <color name="colorGrey">#6a6a6a</color>
+    <color name="colorLight">#f5f5f5</color>
+    <color name="color_ff4a55">#FF4A55</color>
+    <color name="black_3c3c3c">#3C3C3C</color>
+    <color name="black_6B6B6B">#6B6B6B</color>
+    <color name="black_d5d5d5">#D5D5D5</color>
+    <color name="white">#ffffff</color>
+    <color name="black_6a6a6a">#6A6A6A</color>
+    <color name="black_b0b0b0">#B0B0B0</color>
+    <color name="color_ff4b52">#FF4B52</color>
+    <color name="color_b3cccccc">#b3cccccc</color>
+    <color name="black_d0d0d0">#D0D0D0</color>
+    <color name="color_f5f5f5">#f5f5f5</color>
+    <color name="color_EBEBEB">#EBEBEB</color>
+    <color name="color_light_gray">#D3D3D3</color>
+    <color name="color_DCDCDC">#DCDCDC</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_status_bar">#e73f44</color>
+    <color name="color_B1B1B1">#B1B1B1</color>
+    <color name="black">#000000</color>
+    <color name="color_lite_gray">#0f000000</color>
+    <color name="header_text_color">#cac5c5</color>
+
+    <color name="transparent">#0b000000</color>
+</resources>

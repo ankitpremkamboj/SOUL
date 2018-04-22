@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.soul.app">
+
+    <permission
+        android:name="com.soul.app.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.soul.app.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- This app has permission to register and receive data message. -->
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:name=".application.ApplicationController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_soul_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:theme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/fb_appid" />
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.HomeFindingPeopleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SwipeViewHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WebPageLoaderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OutLookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NoMatchesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MatchesFoundActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".activity.MyProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyFullProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MatchedProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditInterestActivity"
+            android:label="@string/title_activity_edit_interest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.InterestActivity"
+            android:label="@string/title_activity_edit_interest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcademicActivity"
+            android:label="@string/title_activity_edit_interest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HeightActivity"
+            android:label="@string/title_activity_edit_interest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditHeightActivity"
+            android:label="@string/title_activity_edit_interest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MatchActivity"
+            android:label="@string/title_activity_match"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".activity.YourOutLookActivity"
+            android:label="@string/title_your_outlook_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.YourSectActivity"
+            android:label="@string/title_your_sect_activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.DemoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name=".activity.ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".activity.SocketChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".swiping.SwipingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+
+        <receiver
+            android:name=".gcm.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.soul.app.gcm" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".gcm.GcmIntentService" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="42740bedaf68f00a0295f9bc6379a260f3146c36" />
+
+        <activity
+            android:name=".activity.ChatReportActivity"
+            android:label="@string/title_activity_chat_report"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name=".activity.SubmitReportActivity"
+            android:label="@string/title_activity_submit_report"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name=".activity.HFPChatReportActivity"
+            android:label="@string/title_activity_chat_report"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name=".activity.HFPSubmitReportActivity"
+            android:label="@string/title_activity_submit_report"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name=".activity.UnMatchActivity"
+            android:label="@string/title_activity_un_match"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name=".activity.FacebookAlbumActivity"
+            android:label="@string/title_activity_facebook_album"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.ImageGalleryActivity"
+            android:label="@string/title_activity_image_gallery"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

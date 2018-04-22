@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "8068373247",
+    "firebase_url": "https://soule-app-16383.firebaseio.com",
+    "project_id": "soule-app-16383",
+    "storage_bucket": "soule-app-16383.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8068373247:android:b5699ce778250444",
+        "android_client_info": {
+          "package_name": "com.soul.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8068373247-jq81a4p3778j9rngd5h7tk5fngbl0ksv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.soul.app",
+            "certificate_hash": "e80ed331cb278c85c7b4a777e2eb9698d8610120"
+          }
+        },
+        {
+          "client_id": "8068373247-hr3re89mnghrkrt9ocdtvejoac6slkfn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8OOpTFzPL4JblFErzFiMza3MLXWXKAUY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8068373247-hr3re89mnghrkrt9ocdtvejoac6slkfn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

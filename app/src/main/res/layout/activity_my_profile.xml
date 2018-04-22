@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.soul.app.activity.MyProfileActivity">
+
+    <include
+        android:id="@+id/header_my_profile_tb"
+        layout="@layout/toolbar"
+        android:visibility="gone"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/header_my_profile_tb"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--  for profile icon-->
+            <include
+
+                layout="@layout/layout_my_profile"></include>
+            <!--  end profile icon-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/my_profile_user_name_tv"
+                    style="@style/avenirLTStdHeavy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp6"
+                    android:padding="@dimen/dp5"
+
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="@dimen/text_size_17sp" />
+
+                <TextView
+                    android:id="@+id/my_profile_designation_tv"
+                    style="@style/avenirLTStdRoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/my_profile_user_name_tv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp6"
+                    android:textColor="@color/colorGreyText"
+                    android:textSize="@dimen/text_size_15sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/edu_tv"
+                    style="@style/avenirLTStdRoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/my_profile_designation_tv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp6"
+                    android:textColor="@color/colorLightGreyText"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/aboutme_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp16"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="2"
+                    android:background="@color/colorDarkDividerLine" />
+
+                <TextView
+                    style="@style/avenirLTStdHeavy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1.4"
+                    android:gravity="center"
+                    android:text="@string/about_me"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="2"
+                    android:background="@color/colorDarkDividerLine" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/aboutme_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp17"
+                android:paddingLeft="@dimen/dp16"
+                android:paddingRight="@dimen/dp16"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/my_profile_about_me_content_tv"
+                    style="@style/avenirLTStdRoman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="3"
+                    android:text="@string/about_me"
+                    android:textColor="@color/colorLightGreyText"
+                    android:textSize="@dimen/text_size_15sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp20"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/invite_friends_rl"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|center_vertical">
+
+
+                    <ImageView
+                        android:id="@+id/my_profile_invite_friends_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="28dp"
+                        android:background="@drawable/ic_setting" />
+
+                    <TextView
+                        android:id="@+id/my_profile_invite_friends_tv"
+                        style="@style/avenirLTStdMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/my_profile_invite_friends_iv"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp21"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:text="Setting"
+                        android:textSize="@dimen/text_size_16sp" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/dp65"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@color/colorDarkDividerLine"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:id="@+id/feedback_rl"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|center_vertical">
+
+                    <ImageView
+                        android:id="@+id/my_profile_feedback_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:background="@drawable/ic_edit_profile" />
+
+                    <TextView
+                        android:id="@+id/my_profile_feedback_tv"
+                        style="@style/avenirLTStdMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/my_profile_feedback_iv"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:text="Edit Profile"
+                        android:textSize="@dimen/text_size_16sp" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDarkDividerLine"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

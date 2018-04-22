@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <!-- <android.support.v4.widget.SwipeRefreshLayout
+         android:id="@+id/chat_swipe_refresh_layout"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:visibility="visible">-->
+
+    <LinearLayout
+        android:id="@+id/chat_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="visible">
+
+        <ListView
+            android:id="@+id/chat_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="@dimen/margin_20"
+            android:isScrollContainer="true"
+            android:paddingLeft="@dimen/margin_19"
+            android:paddingRight="@dimen/margin_19"
+            android:scrollbars="none"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/message_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/gif_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@color/black"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/imgpsh_fullsize" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat_gif_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLight"
+        android:divider="@android:color/transparent"
+        android:isScrollContainer="true"
+        android:scrollbars="none"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dp5"
+        android:background="@color/color_lite_gray" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_10">
+
+        <ImageView
+            android:id="@+id/emoji_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:src="@drawable/photo_copy" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_chat"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_5"
+            android:paddingTop="@dimen/margin_5">
+
+
+            <ImageView
+                android:id="@+id/chat_gif_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp8"
+                android:visibility="visible" />
+
+            <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+                android:id="@+id/chat_message_et"
+                style="@style/avenirLTStdHeavy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/margin_2"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/send_message"
+                android:imeOptions="flagNoFullscreen"
+                android:inputType="textAutoCorrect|textCapSentences|textMultiLine"
+                android:maxLines="5"
+                android:padding="@dimen/margin_5"
+                android:scrollHorizontally="false"
+                android:shadowColor="@color/colorWhite"
+                android:textColorHint="@color/color_light_gray" />
+
+
+          <!--  <ImageView
+                android:id="@+id/emoji_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp5"
+                android:src="@drawable/smiley"
+                android:visibility="invisible" />-->
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/chat_send_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/margin_10"
+            android:src="@drawable/ic_send_button" />
+
+    </LinearLayout>
+</LinearLayout>

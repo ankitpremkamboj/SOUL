@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/image_ll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_5"
+    android:paddingLeft="@dimen/margin_5"
+    android:paddingRight="@dimen/margin_5">
+
+    <com.soul.app.customui.RoundedImageView
+        android:id="@+id/images"
+        android:layout_width="@dimen/dp110"
+        android:layout_height="@dimen/dp110"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rounded_edit_profile" />
+
+</LinearLayout>

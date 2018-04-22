@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/row_matches_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp90"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp19"
+        android:paddingRight="@dimen/dp19">
+
+        <com.soul.app.customui.CircleImageView
+            android:id="@+id/row_matches_pic_ci"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp60"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:id="@+id/name_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_toRightOf="@+id/row_matches_pic_ci"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/row_name_tv"
+                style="@style/avenirLTStdMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/name_ll"
+                android:layout_centerVertical="true"
+                android:layout_gravity="left"
+                android:text="NAME"
+                android:textColor="@color/colorDarkText"
+                android:textSize="@dimen/text_size_15sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="horizontal">
+
+               <!-- <ImageView
+                    android:id="@+id/iv_reply_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/dp6"
+                    android:src="@drawable/reply_icon"
+                    android:visibility="gone" />-->
+
+                <ImageView
+                    android:id="@+id/iv_gif_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/dp6"
+                    android:src="@drawable/gif_image"
+                    android:visibility="gone" />
+
+                <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+                    android:id="@+id/row_message_tv"
+                    style="@style/avenirLTStdMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/name_ll"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:text="@string/messages"
+                    android:textColor="@color/colorGreyText"
+                    android:textSize="@dimen/text_size_13sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_new"
+            style="@style/avenirLTStdMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/lbl_new"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/text_size_12sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:visibility="visible"
+        android:layout_below="@+id/row_matches_rl"
+        android:layout_marginLeft="@dimen/dp80"
+        android:background="@color/colorDarkDividerLine" />
+
+</RelativeLayout>

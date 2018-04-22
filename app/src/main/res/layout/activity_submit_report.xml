@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:padding="@dimen/dp20"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    tools:context="com.soul.app.activity.ChatReportActivity">
+    <ImageView
+        android:id="@+id/close_imgvw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close_icon"
+        android:layout_gravity="right"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_report"
+        android:layout_width="@dimen/dp325"
+        android:layout_height="@dimen/dp350"
+        android:orientation="vertical">
+        <TextView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp30"
+            style="@style/avenirLTStdBlack"
+            android:textSize="@dimen/text_size_15sp"
+            android:textColor="@color/color_status_bar"
+            android:text="@string/lbl_report_user"/>
+        <TextView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp20"
+            style="@style/avenirLTStdRoman"
+            android:textSize="@dimen/text_size_15sp"
+            android:textColor="@color/colorDarkText"
+            android:text="@string/lbl_tell_us_why"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/spam_ll"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+<EditText
+    android:id="@+id/report_reason_tv"
+    android:layout_height="@dimen/dp125"
+    android:layout_width="@dimen/margin_305"
+    android:padding="@dimen/margin_15"
+    style="@style/avenirLTStdRoman"
+    android:gravity="left|top"
+    android:maxLines="4"
+    android:textColor="@color/colorDarkText"
+    android:hint="@string/hint_why_do_you_reprt"
+    android:background="@drawable/rectangle_box"/>
+            
+
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/submit_report_tv"
+            android:layout_marginTop="@dimen/margin_15"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/margin_240"
+            android:layout_height="@dimen/margin_48"
+            android:gravity="center"
+            android:textColor="@color/white"
+            style="@style/avenirLTStdBlack"
+            android:textStyle="bold"
+            android:text="@string/lbl_report"
+            android:background="@drawable/rounded_red_box"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

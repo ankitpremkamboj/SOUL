@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edit_profile_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.soul.app.activity.EditProfileActivity">
+
+    <include
+        android:id="@+id/edit_profile_header_tb"
+        layout="@layout/toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/edit_profile_header_tb"
+
+        android:isScrollContainer="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/layout_edit_profile"
+                layout="@layout/layout_images_edit_profile"></include>
+
+            <TextView
+                android:id="@+id/name_tv"
+                style="@style/avenirLTStdHeavy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp10"
+
+                android:textColor="@color/colorDarkText"
+                android:textSize="@dimen/text_size_18sp" />
+
+            <LinearLayout
+                android:id="@+id/aboutme_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorDarkDividerLine" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp36"
+                    android:background="@color/colorLight"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/avenirLTStdHeavy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:layout_marginTop="@dimen/dp12"
+                        android:text="@string/about_me"
+                        android:textColor="@color/colorGreyText"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/aboutme_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:paddingLeft="@dimen/dp16"
+                android:paddingRight="@dimen/dp16">
+
+                <EditText
+                    android:id="@+id/my_full_profile_about_me_content_tv"
+                    style="@style/avenirLTStdRoman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp12"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:background="@color/white"
+                    android:gravity="left"
+                    android:hint="Tell us a little bit about yourself !!"
+                    android:maxLength="300"
+                    android:maxLines="@integer/aboutme"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingTop="@dimen/dp5"
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="@dimen/text_size_15sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDarkDividerLine" />
+
+
+            <RelativeLayout
+                android:id="@+id/interest_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp36"
+                android:background="@color/colorLight"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/avenirLTStdHeavy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:text="@string/interests"
+                    android:textColor="@color/colorGreyText"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/interests_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp53"
+                android:background="@color/colorWhite"
+                android:paddingLeft="@dimen/dp16"
+                android:paddingRight="@dimen/dp16">
+
+                <TextView
+                    android:id="@+id/my_edit_profile_interests_tv"
+                    style="@style/avenirLTStdRoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/my_profile_instagram_iv"
+                    android:text="Select Interest"
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/blue_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDarkDividerLine" />
+
+
+            <RelativeLayout
+                android:id="@+id/outlooks_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp36"
+                android:background="@color/colorLight"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/avenirLTStdHeavy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:text="@string/academic"
+                    android:textColor="@color/colorGreyText"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/outlook_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp53"
+                android:background="@color/colorWhite"
+                android:paddingLeft="@dimen/dp16"
+                android:paddingRight="@dimen/dp16">
+
+                <TextView
+                    android:id="@+id/my_edit_profile_outlook_tv"
+                    style="@style/avenirLTStdRoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/my_profile_instagram_iv"
+                    android:hint="@string/select_academic"
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/academic_switch"
+                    style="@style/Color1SwitchStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDarkDividerLine"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/sects_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp36"
+                android:background="@color/colorLight"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/avenirLTStdHeavy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:text="@string/sect"
+                    android:textColor="@color/colorGreyText"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sect_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp53"
+                android:background="@color/colorWhite"
+                android:paddingLeft="@dimen/dp16"
+                android:paddingRight="@dimen/dp16"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/my_edit_profile_sect_tv"
+                    style="@style/avenirLTStdRoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/my_profile_instagram_iv"
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/blue_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDarkDividerLine" />
+
+            <RelativeLayout
+                android:id="@+id/height_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp36"
+                android:background="@color/colorLight"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/avenirLTStdHeavy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:text="@string/your_height"
+                    android:textColor="@color/colorGreyText"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/heights_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp53"
+                android:background="@color/colorWhite"
+                android:paddingLeft="@dimen/dp16"
+                android:paddingRight="@dimen/dp16">
+
+                <TextView
+                    android:id="@+id/height_tv"
+                    style="@style/avenirLTStdRoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/my_profile_instagram_iv"
+                    android:text="@string/select_height"
+                    android:textColor="@color/colorDarkText"
+                    android:textColorHint="@color/colorGreyText"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/blue_arrow" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDarkDividerLine" />
+
+            <RelativeLayout
+                android:id="@+id/edus_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp36"
+                android:background="@color/colorLight"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/avenirLTStdHeavy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:text="@string/education"
+                    android:textColor="@color/colorGreyText"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/edu_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp53"
+                android:background="@color/colorWhite"
+                android:paddingLeft="@dimen/dp16"
+                android:paddingRight="@dimen/dp16"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/my_edit_profile_education_tv"
+                    style="@style/avenirLTStdRoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/my_profile_instagram_iv"
+                    android:text="N/A"
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/edu_switch"
+                    style="@style/Color1SwitchStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDarkDividerLine"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:id="@+id/works_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp36"
+                android:background="@color/colorLight"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/avenirLTStdHeavy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:text="@string/work"
+                    android:textColor="@color/colorGreyText"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/work_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp53"
+                android:background="@color/colorWhite"
+                android:paddingLeft="@dimen/dp16"
+                android:paddingRight="@dimen/dp16">
+
+                <TextView
+                    android:id="@+id/my_edit_work_education_tv"
+                    style="@style/avenirLTStdRoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/my_profile_instagram_iv"
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="@dimen/text_size_15sp" />
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/work_switch"
+                    style="@style/Color1SwitchStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDarkDividerLine" />
+
+            <RelativeLayout
+                android:id="@+id/locations_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp36"
+                android:background="@color/colorLight"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/avenirLTStdHeavy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:text="@string/location"
+                    android:textColor="@color/colorGreyText"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/location_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp53"
+                android:background="@color/colorWhite"
+                android:paddingLeft="@dimen/dp16"
+                android:paddingRight="@dimen/dp16">
+
+                <TextView
+                    android:id="@+id/my_edit_work_location_tv"
+                    style="@style/avenirLTStdRoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/my_profile_instagram_iv"
+
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="@dimen/text_size_14sp" />
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/location_switch"
+                    style="@style/Color1SwitchStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDarkDividerLine" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp36"
+                android:background="@color/colorLight"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/avenirLTStdHeavy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:text="@string/instagram"
+                    android:textColor="@color/colorGreyText"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp62"
+                android:background="@color/colorWhite"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp16"
+                android:paddingRight="@dimen/dp16">
+
+                <TextView
+                    android:id="@+id/my_edit_instagram_url_tv"
+                    style="@style/avenirLTStdRoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/my_profile_instagram_iv"
+                    android:text="@string/url_instagram"
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="@dimen/text_size_15sp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/instagram_et"
+                    style="@style/avenirLTStdRoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/my_edit_instagram_url_tv"
+                    android:background="@null"
+                    android:hint="@string/instagram_username"
+                    android:singleLine="true"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="@dimen/text_size_15sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDarkDividerLine" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

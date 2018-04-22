@@ -1,0 +1,142 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+        <!--
+                <item name="colorPrimary">@drawable/cancle_selector_gradient</item>
+        -->
+    </style>
+
+    <!-- &lt;!&ndash; Base application theme. &ndash;&gt;
+   <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+       &lt;!&ndash; Customize your theme here. &ndash;&gt;
+
+       <item name="colorPrimary">@drawable/action_bar_bg</item>
+
+   </style>-->
+
+    <style name="Widget.MaterialProgressBar.ProgressBar" parent="android:Widget.ProgressBar">
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:minWidth">30dp</item>
+        <item name="android:maxWidth">30dp</item>
+        <item name="android:minHeight">28dp</item>
+        <item name="android:maxHeight">28dp</item>
+    </style>
+
+    <style name="Widget.MaterialProgressBar.ProgressBar.Horizontal" parent="android:Widget.ProgressBar.Horizontal">
+        <!--
+        Disabled for correct behavior on Android 4.x
+        <item name="android:progressDrawable">@null</item>
+        -->
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:minHeight">16dp</item>
+        <item name="android:maxHeight">16dp</item>
+    </style>
+
+    <style name="ColorPrimaryStyle">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="switchCompat" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:thumb">@drawable/ic_thumb</item>
+        <item name="showText">false</item>
+    </style>
+
+    <!--fonts style-->
+
+    <style name="avenirLTStdBlack" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/AvenirLTStd-Black.otf</item>
+    </style>
+
+    <style name="avenirLTStdBlackOblique" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/AvenirLTStd-BlackOblique.otf</item>
+    </style>
+
+    <style name="avenirLTStdBook" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/AvenirLTStd-Book.otf</item>
+    </style>
+
+    <style name="avenirLTStdBookOblique" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/AvenirLTStd-BookOblique.otf</item>
+    </style>
+
+    <style name="avenirLTStdHeavy" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/AvenirLTStd-Heavy.otf</item>
+    </style>
+
+    <style name="latoBlack" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/Lato-Black.ttf</item>
+    </style>
+
+    <style name="latoRagular" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/Lato-Regular.ttf</item>
+    </style>
+
+    <style name="avenirLTStdHeavyOblique" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/AvenirLTStd-HeavyOblique.otf</item>
+    </style>
+
+    <style name="avenirLTStdLightOblique" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/ AvenirLTStd-LightOblique.otf</item>
+    </style>
+
+
+    <style name="avenirLTStdMedium" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/AvenirLTStd-Medium.otf</item>
+    </style>
+
+    <style name="avenirLTStdMediumOblique" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/AvenirLTStd-MediumOblique.otf</item>
+    </style>
+
+    <style name="avenirLTStdOblique" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/AvenirLTStd-Oblique.otf</item>
+    </style>
+
+    <style name="avenirLTStdRoman" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/AvenirLTStd-Roman.otf</item>
+    </style>
+
+    <style name="youreInvited" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/YoureInvited.otf</item>
+    </style>
+
+    <style name="youreInvitedHeavy" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/YoureInvitedHeavy.otf</item>
+    </style>
+
+
+    <style name="SwipeFling">
+        <item name="rotation_degrees">15</item>
+        <item name="min_adapter_stack">6</item>
+        <item name="max_visible">4</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">#80000000</item> <!-- Or any color you need -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="Color1SwitchStyle">
+        <item name="android:thumb">@drawable/switch_thumb</item>
+        <item name="android:track">@drawable/switch_track</item>
+        //when use Switch in xml file
+        <item name="track">@drawable/switch_track</item>
+        //when use android.support.v7.widget.SwitchCompat in xml
+
+    </style>
+
+</resources>

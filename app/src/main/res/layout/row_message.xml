@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+
+    <LinearLayout
+        android:id="@+id/ll_date_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp12"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/dp10"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="2"
+            android:background="@color/colorDarkDividerLine" />
+
+        <TextView
+            android:id="@+id/tv_date_header"
+            style=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_marginRight="@dimen/dp12"
+            android:textColor="@color/colorLightGreyText"
+            android:textSize="@dimen/text_15" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="2"
+            android:background="@color/colorDarkDividerLine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/chat_matched_user_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/dp12"
+            android:background="@drawable/rectagngle"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10">
+
+            <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+                android:id="@+id/chat_matched_user_message_tv"
+                style="@style/avenirLTStdRoman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_5"
+                android:paddingRight="@dimen/dp10"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_15"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/gif_matched_user_iv"
+                android:layout_width="@dimen/dp130"
+                android:layout_height="@dimen/dp80"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/chat_matched_user_time_tv"
+            style="@style/avenirLTStdRoman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:gravity="right"
+            android:textColor="#0d0925"
+            android:textSize="@dimen/text_11"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/chat_profile_user_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/dp12"
+            android:background="@drawable/right_chat_rectagngle"
+
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10">
+
+            <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+                android:id="@+id/chat_profile_user_message_tv"
+                style="@style/avenirLTStdRoman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:paddingRight="@dimen/dp10"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_16"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/gif_profiled_user_iv"
+                android:layout_width="@dimen/dp130"
+                android:layout_height="@dimen/dp80"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/chat_profile_user_time_tv"
+            style="@style/avenirLTStdRoman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:gravity="right"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_11"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</LinearLayout>

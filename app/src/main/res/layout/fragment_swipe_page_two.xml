@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tutorial_bg"
+    tools:context="com.soul.app.fragment.SwipePageTwoFragment">
+
+    <!--android:layout_marginBottom="@dimen/dp132"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/tutorials_logo_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp42"
+            />
+
+        <TextView
+            android:id="@+id/swipe_picture_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tutorials_logo_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/second_swipe_picture_left_to_right"
+            android:textSize="@dimen/text_size_19sp" />
+
+        <ImageView
+            android:id="@+id/tutorial_2_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/swipe_picture_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/tutorial_2"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+
+</FrameLayout>

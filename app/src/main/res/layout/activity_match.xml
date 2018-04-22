@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.MatchActivity">
+
+    <!-- <pl.droidsonroids.gif.GifImageView
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/margin_405"
+         android:src="@raw/back" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/container_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/massallah_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_25"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/massallah_tv"
+                    style="@style/youreInvitedHeavy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/lbl_mashallah"
+                    android:textColor="@color/color_ff4b52"
+                    android:textSize="@dimen/text_60" />
+
+                <TextView
+                    android:id="@+id/match_name_tv"
+                    style="@style/avenirLTStdRoman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:gravity="center"
+                    android:text="@string/lbl_you_match_with"
+                    android:textColor="@color/color_ff4b52"
+                    android:textSize="@dimen/text_16" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/root_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_150">
+
+                <com.soul.app.customui.CircleImageView
+                    android:id="@+id/left_img"
+                    android:layout_width="@dimen/margin_150"
+                    android:layout_height="@dimen/margin_150"
+                    android:layout_marginLeft="@dimen/margin_35"
+                    android:scaleType="centerCrop"
+                    app:border_color="@color/white"
+                    app:border_width="@dimen/margin_3" />
+
+                <com.soul.app.customui.CircleImageView
+                    android:id="@+id/right_img"
+                    android:layout_width="@dimen/margin_150"
+                    android:layout_height="@dimen/margin_150"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="@dimen/margin_2"
+                    android:layout_marginRight="@dimen/margin_35"
+                    android:scaleType="centerCrop"
+                    app:border_color="@color/white"
+                    app:border_width="@dimen/margin_3" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_100"
+                    android:layout_marginTop="@dimen/margin_150"
+                    android:src="@drawable/match_logo1" />
+            </FrameLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/matched_animation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- <ImageView
+         android:id="@+id/matched_animation"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_400"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp16">
+
+        <TextView
+            android:id="@+id/send_msg_tv"
+            style="@style/avenirLTStdBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_marginRight="@dimen/dp30"
+            android:background="@drawable/rounded_white_tv"
+            android:gravity="center"
+            android:padding="@dimen/margin_15"
+            android:text="@string/lbl_send_msg"
+            android:textColor="@color/color_ff4b52"
+            android:textSize="@dimen/text_13" />
+
+        <TextView
+            android:id="@+id/keep_swiping_tv"
+            style="@style/avenirLTStdBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_marginRight="@dimen/dp30"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@drawable/rounded_solid_white_tv"
+            android:gravity="center"
+            android:padding="@dimen/margin_15"
+            android:text="@string/lbl_keepswiping"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+    <!--</ScrollView>-->
+
+
+</FrameLayout>

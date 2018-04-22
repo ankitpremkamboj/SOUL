@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|top"
+    android:layout_marginLeft="@dimen/dp15"
+    android:layout_marginRight="@dimen/dp15"
+    android:layout_marginTop="@dimen/dp15"
+    android:background="@drawable/transparent_rounded_vw">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/transparent_rounded_vw"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent_rounded_vw">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/cardImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp375"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/placeholder_image"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="@dimen/margin_10" />
+            <!--it will be user for later -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp300"
+                android:orientation="vertical"
+                android:background="@color/transparent"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp20"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/txt_designation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp20"
+                    android:textColor="@color/white" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp20"
+                    android:layout_gravity="center"
+                    android:rotation="270"
+                    android:src="@drawable/back_icon" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/item_swipe_left_indicator"
+        android:layout_width="@dimen/dp80"
+        android:layout_height="@dimen/dp80"
+        android:layout_margin="@dimen/dp30"
+        android:alpha="0"
+        android:background="@drawable/ic_swipe_like"
+        android:padding="@dimen/dp12" />
+
+    <View
+        android:id="@+id/item_swipe_right_indicator"
+        android:layout_width="@dimen/dp80"
+        android:layout_height="@dimen/dp80"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/dp30"
+        android:alpha="0"
+        android:background="@drawable/ic_swipe_unlike"
+        android:padding="@dimen/dp12" />
+
+</FrameLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.YourOutLookActivity">
+
+    <include
+        android:id="@+id/your_outlook_header_tb"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/your_outlook_header_tb"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp41"
+                android:layout_marginLeft="@dimen/dp19"
+                android:layout_marginRight="@dimen/dp19"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/avenirLTStdRoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/liberal"
+                    android:textColor="@color/colorDarkText" />
+
+                <CheckBox
+                    android:id="@+id/liberal_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/custom_multiple_selection_check"
+                    android:padding="@dimen/margin_5" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/dp19"
+                android:layout_marginRight="@dimen/dp19"
+                android:background="@color/colorLightDividerLine" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp41"
+                android:layout_marginLeft="@dimen/dp19"
+                android:layout_marginRight="@dimen/dp19"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/avenirLTStdRoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/moderate"
+                    android:textColor="@color/colorDarkText" />
+
+                <CheckBox
+                    android:id="@+id/moderate_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/custom_multiple_selection_check"
+                    android:padding="@dimen/margin_5" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/dp19"
+                android:layout_marginRight="@dimen/dp19"
+                android:background="@color/colorLightDividerLine" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp41"
+                android:layout_marginLeft="@dimen/dp19"
+                android:layout_marginRight="@dimen/dp19"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/avenirLTStdRoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/conservative"
+                    android:textColor="@color/colorDarkText" />
+
+                <CheckBox
+                    android:id="@+id/conservative_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/custom_multiple_selection_check"
+                    android:checked="false"
+                    android:padding="@dimen/margin_5" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/dp19"
+                android:layout_marginRight="@dimen/dp19"
+                android:background="@color/colorLightDividerLine" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp41"
+                android:layout_marginLeft="@dimen/dp19"
+                android:layout_marginRight="@dimen/dp19"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/avenirLTStdRoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/non_practising"
+                    android:textColor="@color/colorDarkText" />
+
+                <CheckBox
+                    android:id="@+id/non_practising_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/custom_multiple_selection_check"
+                    android:checked="false"
+                    android:padding="@dimen/margin_5" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/dp19"
+                android:layout_marginRight="@dimen/dp19"
+                android:background="@color/colorLightDividerLine" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp41"
+                android:layout_marginLeft="@dimen/dp19"
+                android:layout_marginRight="@dimen/dp19"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/avenirLTStdRoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/not_important"
+                    android:textColor="@color/colorDarkText" />
+
+                <CheckBox
+                    android:id="@+id/non_important_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/custom_multiple_selection_check"
+                    android:checked="false"
+                    android:padding="@dimen/margin_5" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

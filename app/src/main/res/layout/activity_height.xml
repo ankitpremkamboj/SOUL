@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.soul.app.activity.SettingsActivity">
+
+    <include
+        android:id="@+id/settings_header_tb"
+        layout="@layout/toolbar"></include>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/settings_header_tb"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp36"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/avenirLTStdHeavy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:text="@string/age_range"
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="@dimen/text_size_13sp"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp16"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/height_min_tv"
+                        style="@style/avenirLTStdRoman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 cm"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        style="@style/avenirLTStdRoman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" to "
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/height_max_tv"
+                        style="@style/avenirLTStdRoman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 cm"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp70"
+                android:paddingLeft="@dimen/dp16"
+                android:paddingRight="@dimen/dp16">
+
+                <io.apptik.widget.MultiSlider
+                    android:id="@+id/height_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:padding="@dimen/dp3"
+                    android:thumb="@drawable/ic_thumb_white"
+                    app:range="@drawable/slide_track"
+                    app:range1="@drawable/multislider_scrubber_track_holo_light"
+                    app:scaleMax="250"
+                    app:scaleMin="100"
+                    app:stepsThumbsApart="2"
+                    app:thumbNumber="2"
+                    app:thumbValue1="100"
+                    app:thumbValue2="250" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
